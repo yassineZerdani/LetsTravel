@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.travelapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Setting"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".Chatbot" />
+        <activity android:name=".Plans" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC7vC4v5akYbhwo7Vdw5MgDJb9lKyD1F5Y"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <activity android:name=".News_Activity"/>
+        <activity android:name=".NewsDetailActivity"/>
+        <activity android:name=".Translation_Activity" />
+        <activity android:name=".Devise_Converter" />
+        <activity android:name=".ActivityOne" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Signin" />
+        <activity android:name=".Accueil">
+
+        </activity>
+        <activity android:name=".MapActivity" />
+        <activity android:name=".MapsActivity" />
+    </application>
+
+</manifest>
+
